@@ -1,11 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
 int main()
 {
+
     char *arr[100];
     int count = 0;
+     FILE* file = fopen("istoric.txt", "r");
 
+     char *currentline;
+
+     currentline = (char *)malloc(100 * sizeof(char));
+     size_t len=0;
+     while (  fgets(currentline,100, file) != NULL)
+        {
+
+        arr[count] = currentline;
+        count++;
+        currentline = (char *)malloc(100 * sizeof(char));
+
+        }
+
+    fclose(file);
     while (1 == 1)
     {
 
@@ -63,17 +79,28 @@ int main()
                             case 0:
                                 break;
                             case 1:
-                                arr[count] = "Spartan, gyros";
+                                {arr[count] = "Spartan, gyros";
                                 count++;
-                                break;
+
+                                FILE *pFile2=fopen("istoric.txt", "a");
+                                fprintf(pFile2, "Spartan, gyros\n");
+                                fclose(pFile2);
+
+                                break;}
                             case 2:
-                                arr[count] = "Spartan, souvlaki";
+                                {arr[count] = "Spartan, souvlaki";
                                 count++;
-                                break;
+                                FILE *pFile2=fopen("istoric.txt", "a");
+                                fprintf(pFile2, "Spartan, souvlaki\n");
+                                fclose(pFile2);
+                                break;}
                             case 3:
-                                arr[count] = "Spartan, pita";
+                                {arr[count] = "Spartan, pita";
                                 count++;
-                                break;
+                                FILE *pFile2=fopen("istoric.txt", "a");
+                                fprintf(pFile2, "Spartan, pita\n");
+                                fclose(pFile2);
+                                break;}
                             }
                         } while (choice3 < 0 || choice3 > 3);
 
@@ -102,17 +129,29 @@ int main()
                             case 0:
                                 break;
                             case 1:
-                                arr[count] = "Mesopotamia, shaorma";
+                                {arr[count] = "Mesopotamia, shaorma";
                                 count++;
-                                break;
+
+                                FILE *pFile2=fopen("istoric.txt", "a");
+                                fprintf(pFile2, "Mesopotamia, shaorma\n");
+                                fclose(pFile2);
+                                break;}
                             case 2:
-                                arr[count] = "Mesopotamia, hamburger";
+                                {arr[count] = "Mesopotamia, hamburger";
                                 count++;
-                                break;
+
+                                FILE *pFile2=fopen("istoric.txt", "a");
+                                fprintf(pFile2, "Mesopotamia, hamburger\n");
+                                fclose(pFile2);
+                                break;}
                             case 3:
-                                arr[count] = "Mesopotamia, doner";
+                                {arr[count] = "Mesopotamia, doner";
                                 count++;
-                                break;
+
+                                FILE *pFile2=fopen("istoric.txt", "a");
+                                fprintf(pFile2, "Mesopotamia, doner\n");
+                                fclose(pFile2);
+                                break;}
                             }
                         } while (choice4 < 0 || choice4 > 3);
                         system("cls");
@@ -139,6 +178,11 @@ int main()
                     strcat(descriere, ",Lungime: ");
                     strcat(descriere, charLungime);
                     arr[count] = &descriere;
+                    count++;
+
+                    FILE *pFile2=fopen("istoric.txt", "a");
+                    fprintf(pFile2, "%s\n", &descriere);
+                    fclose(pFile2);
                 }
                 if (choice2 == 0)
                 {
