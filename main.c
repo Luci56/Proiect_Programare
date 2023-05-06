@@ -200,6 +200,9 @@ int main()
             count++;
             arr[count] = "----------";
             count++;
+            FILE *pFile2=fopen("istoric.txt", "a");
+                    fprintf(pFile2, "Locatie: %s\n", locatie);
+                    fclose(pFile2);
         }
         else if (choice == 2)
         {
