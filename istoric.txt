@@ -6,3 +6,24 @@ Spartan, souvlaki
 sparatn,gyros
 spartan gyros
 
+Spartan, gyros
+Pizza:asg,Lungime: 5
+Spartan, souvlaki
+Spartan, pita
+Mesopotamia, hamburger
+Locatie: nicss
+Pizza:salami mozzarela masline,Lungime: 25
+Locatie: luci boss
+Spartan, gyros
+Locatie: luci ma
+Spartan, gyros
+Pizza:sakam,Lungime: 12
+Locatie: alc
+Spartan, souvlaki
+Pizza:slalam masline,Lungime: 25
+Locatie: luci acasa
+Spartan, souvlaki
+Pizza:salam moz,Lungime: 21
+Locatie: luci
+Pizza:salami mozzarella masline,Lungime: 25
+Locatie: strada telegraf
