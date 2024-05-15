@@ -1,0 +1,1 @@
+This C++ project enables users to effortlessly select products and specify delivery addresses. Whether ordering a single item or multiple, the application ensures a smooth experience from selection to confirmation.
